@@ -28,6 +28,8 @@ class mqtts(C2Profile):
 		C2ProfileParameter(
 			name="use_ssl",
 			description="Does the mqtt server use SSL?",
+			parameter_type=ParameterType.ChooseOne,
+			choices=["True", "False"],
 			default_value="True",
 			required=True,
 		),
@@ -106,14 +108,19 @@ class mqtts(C2Profile):
 		C2ProfileParameter(
 			name="encrypted_exchange_check",
 			description="Perform Key Exchange",
+			parameter_type=ParameterType.ChooseOne,
+			choices=["True", "False"],
 			default_value="True",
 			required=True,
 		),
 		C2ProfileParameter(
 			name="websockets",
 			description="Does the MQTT server use Websockets?",
+			parameter_type=ParameterType.ChooseOne,
+			choices=["True", "False"],
 			default_value="False",
 			required=True,
 		)
 	]
+
 
