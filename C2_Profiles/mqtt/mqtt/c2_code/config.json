@@ -10,7 +10,8 @@
       "mqtt_pass": "",
       "debug": false,
       "use_ssl": true,
-      "payloads": {}
+      "payloads": {},
+      "websockets": false
     }
   ]
 }
